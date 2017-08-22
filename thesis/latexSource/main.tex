@@ -1,0 +1,128 @@
+\documentclass[11pt,twoside,a4paper]{book}   
+\usepackage[czech, english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%=-=-=-=-=-=-=-=-=-=-=-=--=%
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{k336_thesis_macros}
+\usepackage{pdfpages}
+\usepackage{afterpage}
+
+
+\newcommand\TypeOfWork{Master's Thesis}   \typeout{Master's Thesis} 
+\newcommand\StudProgram{Data Science}
+\newcommand\StudBranch{Open Science}
+
+\newcommand\WorkTitle{Problem detection and prediction in complex software architectures}
+\newcommand\FirstandFamilyName{Bc. Ondrej Borovec}
+\newcommand\Supervisor{TBD}
+
+\usepackage[
+pdftitle={\WorkTitle},
+pdfauthor={\FirstandFamilyName},
+bookmarks=true,
+colorlinks=true,
+breaklinks=true,
+urlcolor=blue,
+citecolor=blue,
+linkcolor=blue,
+unicode=true,
+]
+{hyperref}
+
+
+\begin{document}
+
+\selectlanguage{english} 
+
+\typeout{************************************************}
+\typeout{Language: english}
+\typeout{Type of Work: \TypeOfWork}
+\typeout{Study Program: \StudProgram}
+\typeout{Study Branch: \StudBranch}
+\typeout{Author: \FirstandFamilyName}
+\typeout{Title: \WorkTitle}
+\typeout{Supervisor: \Supervisor}
+\typeout{***************************************************}
+\newcommand\Department{Department of Computer Science and Engineering}
+\newcommand\Faculty{Faculty of Electrical Engineering}
+\newcommand\University{Czech Technical University in Prague}
+\newcommand\labelSupervisor{Supervisor}
+\newcommand\labelStudProgram{Study Programme} 
+\newcommand\labelStudBranch{Field of Study}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%    Titulni stranka / Title page 
+
+\coverpagestarts
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%   Assignment
+\includepdf[pages={1}]{blankPage.pdf}
+\includepdf[pages={1}]{blankPage.pdf} % English Assignment
+\includepdf[pages={1}]{blankPage.pdf}
+\includepdf[pages={1}]{blankPage.pdf} % Czech Assignment
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%    Podekovani / Acknowledgements 
+
+\acknowledgements
+\noindent
+Zde můžete napsat své poděkování, pokud chcete a máte komu děkovat.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%   Declaration 
+
+\declaration{In Kořenovice nad Bečvárkou on May 15, 2008}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%    Abstract 
+ 
+\abstractpage
+
+English abstract
+
+\abstractpage
+
+Czech abstract
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Table of Contents 
+
+\tableofcontents
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  List of Figures 
+
+\listoffigures
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  List of Tables
+
+\listoftables
+
+
+%**************************************************************
+
+\mainbodystarts
+\normalfont
+\parskip=0.2\baselineskip plus 0.2\baselineskip minus 0.1\baselineskip
+
+\include{content/1_introduction}
+\include{content/2_stateOfTheArt}
+\include{content/3_methodology}
+\include{content/4_suggestedSolution}
+\include{content/5_conclusion}
+
+%**************************************************************
+
+\bibliographystyle{abbrv}
+{
+\def\CS{$\cal C\kern-0.1667em\lower.5ex\hbox{$\cal S$}\kern-0.075em $}
+\bibliography{reference}
+}
+
+%**************************************************************
+
+\appendix
+
+\include{content/X_appendix.tex}
+\end{document}
