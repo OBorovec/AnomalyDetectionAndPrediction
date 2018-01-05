@@ -1,0 +1,14 @@
+\subsection{Log event messages collection}
+Since we do not want to target on a single machines running multiple program, but all cluster solutions, log analysis and failure prediction cannot be done on cluster machine themselves. There is needed a NOSQL database to which all generated event messages and all monitoring will be send and stored in. There are many solutions which can be tracking a log file status and stream every change of that file.
+
+But before every every event is stored to a database, we need to create some meta data, so it can be clustered and put in to the right context later. We are suggesting to store this meta data:
+\begin{itemize}
+\item \textbf{Time of collection} - in most cases this may look like redundancy since most of event lo messages contain its own time-stamp, but some existing formats do no and also difference between actual time-stamp and the collection time may be used as a feature.
+\item \textbf{Log file path} - some programs my have multiple log files, so it is necessary to keep tracing from which file an event comes from
+\item \textbf{Program name and version} - every program and program version can have its own states and this information can be later used as identification of your architecture and specification of possible error solutions 
+\end{itemize}
+
+\subsection{Text pattern mining}
+Every even text message can be seen as a specific pattern which variables were filled with words which are describing current state. There is always a limited number of text patterns as well as possible program states. We assign a specific id to each used pattern then these pattern ids can be understood as state ids. Then every possible state can be represent by a pattern id and a tuple of words, which are used instead of variables in the pattern.
+
+As we referred in Section \ref{sec:currentSolution}, there are algorithm which can effectively mine text pattern from a set of text messages. But we do not see it as a necessary step, we are entering age of open sources \cite{deshpande2008total} so it is possible run source-code-analysis-based log parsing as described in \cite{xu2010detecting}. We believe, that if there would be an open source tool to do such analysis with standardized output, even companies which did not publish their code, could provide this this knowledge base to improve their services.

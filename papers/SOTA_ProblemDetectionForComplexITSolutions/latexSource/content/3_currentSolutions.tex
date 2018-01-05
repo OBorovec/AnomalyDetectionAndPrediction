@@ -1,0 +1,42 @@
+General Anomaly Detection is old and quite studied field of Computer Science and is well summarized in \cite{chandola2009anomaly}. Even though it does not reflect new machine learning techniques of last ten years, many approaches are still valid and can be effectively used. But as we see our problem and since we know our specific implementation, we do not need totally general approach, but have to select the ones, which has the highest potential for our problematic.
+
+In this section we would like to mention theoretical frameworks which could be applicably on our problematic and then we want to mention current commercial solutions. We do not want to deal with a problematic of pattern detection of texts of event messages. This patent \cite{bao2017hierarchical} or this paper \cite{vaarandi2008mining}.
+
+\subsection{Keyword search, pattern matching, heuristic decisions and statistics} \label{app1}
+It is the oldest technique how to replace a human with simple script which are run under certain circumstances. In general there could be a script which parse every written line to a log file and try to parse according to predefined patterns. Based on gained information it can alert a product owner or run a different script. 
+
+In case this approach is applied on a single file it may under the condition of total knowledge of source program and maximum external control of that program as valid self healing system. But when it is used on multiple log files, then a common feature space would be required so scripts can work with the fact, that every program in our architecture can influence any other, and such scripting would be too complex. In the industry it mostly ended it a point that if keywords ERROR or CRITICAL were found, responsible person was alerted to deal with it, but this is not efficient enough (\cite{oliner2007supercomputers}).
+
+To this subsection we also count techniques of frequent pattern mining \cite{han2007frequent}.
+
+\subsection{Feature vector and PCA classification}
+This Approach was heavily studied at Berkeley and in they first paper \cite{xu2008mining} they were mainly extracting a feature vector for each message and then using PCA algorithm to determine whether a message signify an anomaly or not. In the latter work \cite{xu2009online} they more focused on the feature extraction, message pre-filtering and grouping. In the end, the team achieved god result: not missing any actual problem and precision better than 86\%.
+
+This unsupervised method seems to be good at detection of anomalies, but cannot be used to predict them.
+
+\subsection{Hidden Markovov chains}
+TBD \cite{yamanishi2005dynamic}
+
+\subsection{Feature vector and Pattern generation}
+TBD \cite{kimura2015proactive}
+
+\subsection{RNN and CNN}
+TBD \cite{zhang2016automated}
+
+\subsection{Regular models with graph representation}
+This general framework is well described in \cite{wan2016event}. It is effective easily parallelizable way based on event hierarchy which create a regular model graph and then using a regularity function on an event in a series to identify irregularities as events in context of a serries which never or barely appeared before. The whole system of model creation and regularity estimation is quite complex and cannot be easily shorten to this paper. So we would like to refer you to the original paper.
+
+Downside of an implementation of that framework on our problem is that log events do not a hierarchy structure in general. The framework can still work with it as wit a with a tree without any inner nodes, but then we are loosing some suggested optimizations. On the other hand once created model can be easily updated if you have new training data and you do not have to teach your model from scratch. 
+
+\subsection{Commercial solutions}
+We are trying to list most visible solutions for log file analysis and failure detection/prediction. What we found out in general, these software products have to be reliable and well tested, so it cannot and does not reflect the most recent research in this field. 
+
+\begin{itemize}
+\item Monitoring systems as \textbf{Nagios}\footnote{\url{https://www.nagios.org/}}, \textbf{Monit}\footnote{\url{https://mmonit.com/monit/}}, \textbf{LogEntries}, \textbf{Loggly}
+\item \textbf{Logsurfer}\footnote{\url{http://www.crypt.gen.nz/logsurfer/}} - \cite{prewett2003analyzing} a rule based system that using regular
+expressions to filter and act on system log messages as described in \ref{app1}
+\item \textbf{Prelert}\footnote{\url{http://info.prelert.com/}} - using unsupervised machine learning based on simple mathematical operations and aggregations
+\item \textbf{Splunk}\footnote{\url{https://www.splunk.com/}} - a tool for complex analysis and visualizations
+\end{itemize}
+
+Unfortunately, non of mentioned solutions is using any kind of deep learning and still leaves a lot of work on their users.
