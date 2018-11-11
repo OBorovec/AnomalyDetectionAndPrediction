@@ -1,4 +1,4 @@
-\documentclass[11pt,twoside,a4paper]{book}   
+ \documentclass[11pt,twoside,a4paper]{book}   
 \usepackage[czech, english]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -8,15 +8,19 @@
 \usepackage{k336_thesis_macros}
 \usepackage{pdfpages}
 \usepackage{afterpage}
+\usepackage[super]{nth}
+\usepackage{array}
 
+\usepackage{amsthm}
+\newtheorem{definition}{Definition}[chapter]
 
 \newcommand\TypeOfWork{Master's Thesis}   \typeout{Master's Thesis} 
-\newcommand\StudProgram{Data Science}
-\newcommand\StudBranch{Open Science}
+\newcommand\StudProgram{Open Science}
+\newcommand\StudBranch{Data Science}
 
 \newcommand\WorkTitle{Problem detection and prediction in complex software architectures}
-\newcommand\FirstandFamilyName{Bc. Ondrej Borovec}
-\newcommand\Supervisor{TBD}
+\newcommand\FirstandFamilyName{Bc. Ondřej Borovec MSc.}
+\newcommand\Supervisor{Ing. Martin Svatoš}
 
 \usepackage[
 pdftitle={\WorkTitle},
@@ -34,7 +38,7 @@ unicode=true,
 
 \begin{document}
 
-\selectlanguage{english} 
+\baselineskip=16pt plus1pt
 
 \typeout{************************************************}
 \typeout{Language: english}
@@ -72,8 +76,12 @@ Zde můžete napsat své poděkování, pokud chcete a máte komu děkovat.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%   Declaration 
 
-\declaration{In Kořenovice nad Bečvárkou on May 15, 2008}
+\declaration{In Prague on November 30, 2018}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%   Motivation
+
+\include{content/0_motivation}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%    Abstract 
  
@@ -85,18 +93,12 @@ English abstract
 
 Czech abstract
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Table of Contents 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%    Content tables
 
 \tableofcontents
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  List of Figures 
-
 \listoffigures
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  List of Tables
-
 \listoftables
 
 
@@ -108,7 +110,7 @@ Czech abstract
 
 \include{content/1_introduction}
 \include{content/2_stateOfTheArt}
-\include{content/3_methodology}
+\include{content/3_dataset}
 \include{content/4_suggestedSolution}
 \include{content/5_conclusion}
 

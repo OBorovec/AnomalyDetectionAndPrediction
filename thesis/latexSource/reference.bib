@@ -1,175 +1,426 @@
-@Article{Chen01,
-  author = "Yong-Sheng Chen and Yi-Ping Hung and Chiou-Shann Fuh",
-  title  = "Fast Block Matching Algorithm Based on the Winner-Update Strategy",
-  journal= "IEEE Transactions On Image Processing",
-  pages  = "1212--1222",
-  volume =   10,
-  number =    8,
-  year   = 2001,
+w %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Papers demonstrating anomaly detection on examples
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{rehak2008trust,
+  title={Trust-based classifier combination for network anomaly detection},
+  author={Reh{\'a}k, Martin and P{\v{e}}chou{\v{c}}ek, Michal and Grill, Martin and Bartos, Karel},
+  journal={Cooperative Information Agents XII},
+  pages={116--130},
+  year={2008},
+  publisher={Springer}
 }
 
-@Book{Serra93,
-  author    = "Jean Serra",
-  title     = "Image Analysis and Mathematical Morphology",
-  publisher = "Academic Press",
-  volume    =  1,
-  address   = "Oval Road, London, UK",
-  edition   = "4th",
-  year      =  1993,
+@article{salem2014online,
+  title={Online anomaly detection in wireless body area networks for reliable healthcare monitoring},
+  author={Salem, Osman and Liu, Yaning and Mehaoua, Ahmed and Boutaba, Raouf},
+  journal={IEEE journal of biomedical and health informatics},
+  volume={18},
+  number={5},
+  pages={1541--1551},
+  year={2014},
+  publisher={IEEE}
 }
 
-% Pokud potrebujeme BibTeXu napovedet, kde je nutne zachovat velka a mala 
-% pismena, je potreba pouzit slozene zavorky {}. 
-% Vetsinou jde o zkratky a vlastnich jmena, ktera nejsou na zacatku nazvu 
-% publikace, pripadne o nazvy maker (viz napr. makro \LaTeX).
+@article{bolton2001unsupervised,
+  author={Bolton, Richard J and Hand, David J and others},
+  journal={Credit Scoring and Credit Control VII},
+  pages={235--255},
+  year={2001},
+  publisher={Citeseer}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-@Misc{Weber04,
-  author = "Martin Weber",
-  title  = "Auto{T}race: {A} utility for converting bitmap into vector graphics",
-  note   = "\verb|http://autotrace.sourceforge.net|",
-  year   = 2004,
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Datasets
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{ahmad2017unsupervised,
+  title={Unsupervised real-time anomaly detection for streaming data},
+  author={Ahmad, Subutai and Lavin, Alexander and Purdy, Scott and Agha, Zuha},
+  journal={Neurocomputing},
+  volume={262},
+  pages={134--147},
+  year={2017},
+  publisher={Elsevier}
 }
 
-@InProceedings{Weiss99,
-  author    = "Yair Weiss",
-  title     = "Segmentation using eigenvectors: {A} unifying view",
-  booktitle = "Processings of IEEE International Conference on Computer Vision",
-  editor    = "Kim Zheng",
-  pages     = "975--982",
-  year      =  1999,
+@inproceedings{xu2009online,
+  title={Online system problem detection by mining patterns of console logs},
+  author={Xu, Wei and Huang, Ling and Fox, Armando and Patterson, David and Jordan, Michael},
+  booktitle={Data Mining, 2009. ICDM'09. Ninth IEEE International Conference on},
+  pages={588--597},
+  year={2009},
+  organization={IEEE}
 }
 
-@InProceedings{Nam04,
-  author = 	  {Young Jin Nam and Chanik Park},
-  title = 	  {An efficient fair queuing algorithm for guaranteed disk bandwidth},
-  booktitle =     {Euro-Par 2004 Parallel Processing},
-  year =	  {2004},
-  editor =	  {M. Danelutto and D. Laforenza and M. Vanneschi},
-  month =	  {august},
-  series =	  {Lecture Notes in Computer Science},
-  number =	  3149,
-  pages =	  {799-802},
-  publisher =     {Springer Verlag, 2004},
+@article{Zhu2017,
+    author = "Jamie Zhu",
+    title = "{HDFS Logs}",
+    year = "2017",
+    month = "7",
+    url = "https://figshare.com/articles/HDFS_Logs/4040124",
+    doi = "10.6084/m9.figshare.4040124.v1"
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% First observed paper about anomaly detection
+@article{edgeworth1887xli,
+  title={Xli. on discordant observations},
+  author={Edgeworth, FY},
+  journal={The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science},
+  volume={23},
+  number={143},
+  pages={364--375},
+  year={1887},
+  publisher={Taylor \& Francis}
+}
+
+% General anomaly survey - anomaly definition
+@article{chandola2009anomaly,
+  title={Anomaly detection: A survey},
+  author={Chandola, Varun and Banerjee, Arindam and Kumar, Vipin},
+  journal={ACM computing surveys (CSUR)},
+  volume={41},
+  number={3},
+  pages={15},
+  year={2009},
+  publisher={ACM}
+}
+
+% Source code analysis
+@inproceedings{xu2009detecting,
+  title={Detecting large-scale system problems by mining console logs},
+  author={Xu, Wei and Huang, Ling and Fox, Armando and Patterson, David and Jordan, Michael I},
+  booktitle={Proceedings of the ACM SIGOPS 22nd symposium on Operating systems principles},
+  pages={117--132},
+  year={2009},
+  organization={ACM}
+}
+
+% Log-key term, Source code analysis
+@inproceedings{fu2009execution,
+  title={Execution anomaly detection in distributed systems through unstructured log analysis},
+  author={Fu, Qiang and Lou, Jian-Guang and Wang, Yi and Li, Jiang},
+  booktitle={Data Mining, 2009. ICDM'09. Ninth IEEE International Conference on},
+  pages={149--158},
+  year={2009},
+  organization={IEEE}
+}
+
+% Log-key term representaation, LSTM model for anomaly detection
+@inproceedings{du2017deeplog,
+  title={Deeplog: Anomaly detection and diagnosis from system logs through deep learning},
+  author={Du, Min and Li, Feifei and Zheng, Guineng and Srikumar, Vivek},
+  booktitle={Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security},
+  pages={1285--1298},
+  year={2017},
+  organization={ACM}
+}
+@article{hochreiter1997long,
+  title={Long short-term memory},
+  author={Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+  journal={Neural computation},
+  volume={9},
+  number={8},
+  pages={1735--1780},
+  year={1997},
+  publisher={MIT Press}
+}
+
+% About general logging - How-to-log
+@inproceedings{chen2017characterizing,
+  title={Characterizing and detecting anti-patterns in the logging code},
+  author={Chen, Boyuan and Jiang, Zhen Ming Jack},
+  booktitle={Proceedings of the 39th International Conference on Software Engineering},
+  pages={71--81},
+  year={2017},
+  organization={IEEE Press}
+}
+
+% Combining machine metrics with logs
+@inproceedings{farshchi2015experience,
+  title={Experience report: Anomaly detection of cloud application operations using log and cloud metric correlation analysis},
+  author={Farshchi, Mostafa and Schneider, Jean-Guy and Weber, Ingo and Grundy, John},
+  booktitle={Software Reliability Engineering (ISSRE), 2015 IEEE 26th International Symposium on},
+  pages={24--34},
+  year={2015},
+  organization={IEEE}
 }
 
 
-% Nekdy musime dlouhe URL odkazy zalamovat rucne, jak je ukazano nize.
-% Vzdy ale uvedeme, kdy byla stranka naposledy aktualizovana, resp. pokud neni
-% uvedeno, datum, kdy jsme udaje z ni nacerpali.
 
-@Misc{CSTUG,
-  key    = "web:cstug",
-  author = "",
-  title  = "{CSTUG} --- {\CS}{\TeX} {U}sers {G}roup --- hlavní stránka",
-  note   = "\\ \verb|http://www.cstug.cz/|, stav z 2.\,3.\,2009",
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Log parsers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LCS for log parsing
+@inproceedings{du2016spell,
+  title={Spell: Streaming parsing of system event logs},
+  author={Du, Min and Li, Feifei},
+  booktitle={Data Mining (ICDM), 2016 IEEE 16th International Conference on},
+  pages={859--864},
+  year={2016},
+  organization={IEEE}
 }
 
-@Misc{latexdocweb,
-  key    = "web:latexdocweb",
-  author = "",
-  title  = "{\LaTeX} --- online manuál",
-  note   = "\\ \verb|http://www.cstug.cz/latex/lm/frames.html|, stav ze 4.\,5.\,2009",
+% Parsing logs base on trees and comparison to all other current
+@inproceedings{he2017drain,
+  title={Drain: An online log parsing approach with fixed depth tree},
+  author={He, Pinjia and Zhu, Jieming and Zheng, Zibin and Lyu, Michael R},
+  booktitle={Web Services (ICWS), 2017 IEEE International Conference on},
+  pages={33--40},
+  year={2017},
+  organization={IEEE}
+}
+
+@inproceedings{mizutani2013incremental,
+  title={Incremental mining of system log format},
+  author={Mizutani, Masayoshi},
+  booktitle={Services Computing (SCC), 2013 IEEE International Conference on},
+  pages={595--602},
+  year={2013},
+  organization={IEEE}
+}
+
+@inproceedings{vaarandi2003data,
+  title={A data clustering algorithm for mining patterns from event logs},
+  author={Vaarandi, Risto},
+  booktitle={IP Operations \& Management, 2003.(IPOM 2003). 3rd IEEE Workshop on},
+  pages={119--126},
+  year={2003},
+  organization={IEEE}
+}
+
+@inproceedings{makanju2009clustering,
+  title={Clustering event logs using iterative partitioning},
+  author={Makanju, Adetokunbo AO and Zincir-Heywood, A Nur and Milios, Evangelos E},
+  booktitle={Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining},
+  pages={1255--1264},
+  year={2009},
+  organization={ACM}
+}
+
+@inproceedings{tang2011logsig,
+  title={LogSig: Generating system events from raw textual logs},
+  author={Tang, Liang and Li, Tao and Perng, Chang-Shing},
+  booktitle={Proceedings of the 20th ACM international conference on Information and knowledge management},
+  pages={785--794},
+  year={2011},
+  organization={ACM}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 50 GB of logs per hour
+@article{mi2013toward,
+  title={Toward fine-grained, unsupervised, scalable performance diagnosis for production cloud computing systems},
+  author={Mi, Haibo and Wang, Huaimin and Zhou, Yangfan and Lyu, Michael Rung-Tsong and Cai, Hua},
+  journal={IEEE Transactions on Parallel and Distributed Systems},
+  volume={24},
+  number={6},
+  pages={1245--1255},
+  year={2013},
+  publisher={IEEE}
+}
+
+% HDFS 
+@inproceedings{shvachko2010hadoop,
+  title={The hadoop distributed file system},
+  author={Shvachko, Konstantin and Kuang, Hairong and Radia, Sanjay and Chansler, Robert},
+  booktitle={Mass storage systems and technologies (MSST), 2010 IEEE 26th symposium on},
+  pages={1--10},
+  year={2010},
+  organization={Ieee}
+}
+@inproceedings{sanjay2003google,
+  title	= {The Google File System},
+  author	= {Sanjay Ghemawat and Howard Gobioff and Shun-Tak Leung},
+  year	= {2003},
+  booktitle	= {Proceedings of the 19th ACM Symposium on Operating  Systems Principles},
+  pages	= {20--43},
+  address	= {Bolton Landing, NY}
+}
+
+% Mining invariant from logs - from state of the art
+@inproceedings{lou2010mining,
+  title={Mining Invariants from Console Logs for System Problem Detection.},
+  author={Lou, Jian-Guang and Fu, Qiang and Yang, Shengqi and Xu, Ye and Li, Jiang},
+  booktitle={USENIX Annual Technical Conference},
+  pages={23--25},
+  year={2010}
+}
+
+% SVM for log anomaly detection
+@inproceedings{liang2007failure,
+  title={Failure prediction in ibm bluegene/l event logs},
+  author={Liang, Yinglung and Zhang, Yanyong and Xiong, Hui and Sahoo, Ramendra},
+  booktitle={Data Mining, 2007. ICDM 2007. Seventh IEEE International Conference on},
+  pages={583--588},
+  year={2007},
+  organization={IEEE}
+}
+
+% Log clustering with IDF
+@inproceedings{lin2016log,
+  title={Log clustering based problem identification for online service systems},
+  author={Lin, Qingwei and Zhang, Hongyu and Lou, Jian-Guang and Zhang, Yu and Chen, Xuewei},
+  booktitle={Proceedings of the 38th International Conference on Software Engineering Companion},
+  pages={102--111},
+  year={2016},
+  organization={ACM}
+}
+
+% Decision trees for log anomaly detection
+@inproceedings{chen2004failure,
+  title={Failure diagnosis using decision trees},
+  author={Chen, Mike and Zheng, Alice X and Lloyd, Jim and Jordan, Michael I and Brewer, Eric},
+  booktitle={null},
+  pages={36--43},
+  year={2004},
+  organization={IEEE}
+}
+
+% log workflow anomaly detection
+@misc{joshi2017cloudseer,
+  title={CloudSeer: using logs to detect errors in the cloud infrastructure},
+  author={Joshi, Pallavi and Zhang, Hui and Jianwu, XU and Yu, Xiao and Jiang, Guofei},
+  year={2017},
+  month=aug # "~1",
+  publisher={Google Patents},
+  note={US Patent 9,720,753}
+}
+@inproceedings{beschastnikh2014inferring,
+  title={Inferring models of concurrent systems from logs of their behavior with CSight},
+  author={Beschastnikh, Ivan and Brun, Yuriy and Ernst, Michael D and Krishnamurthy, Arvind},
+  booktitle={Proceedings of the 36th International Conference on Software Engineering},
+  pages={468--479},
+  year={2014},
+  organization={ACM}
+}
+@article{brand1983communicating,
+  title={On communicating finite-state machines},
+  author={Brand, Daniel and Zafiropulo, Pitro},
+  journal={Journal of the ACM (JACM)},
+  volume={30},
+  number={2},
+  pages={323--342},
+  year={1983},
+  publisher={ACM}
+}
+@inproceedings{clarke2000counterexample,
+  title={Counterexample-guided abstraction refinement},
+  author={Clarke, Edmund and Grumberg, Orna and Jha, Somesh and Lu, Yuan and Veith, Helmut},
+  booktitle={International Conference on Computer Aided Verification},
+  pages={154--169},
+  year={2000},
+  organization={Springer}
+}
+
+% TDIDF anomaly detection
+@inproceedings{zhang2016automated,
+  title={Automated IT system failure prediction: A deep learning approach.},
+  author={Zhang, Ke and Xu, Jianwu and Min, Martin Renqiang and Jiang, Guofei and Pelechrinis, Konstantinos and Zhang, Hui},
+  booktitle={BigData},
+  pages={1291--1300},
+  year={2016}
+}
+
+% General experiment with different machine learning models for log anomaly detection
+@inproceedings{he2016experience,
+  title={Experience report: system log analysis for anomaly detection},
+  author={He, Shilin and Zhu, Jieming and He, Pinjia and Lyu, Michael R},
+  booktitle={Software Reliability Engineering (ISSRE), 2016 IEEE 27th International Symposium on},
+  pages={207--218},
+  year={2016},
+  organization={IEEE}
+}
+
+% Old experience stady on log parsing
+@inproceedings{he2016evaluation,
+  title={An evaluation study on log parsing and its use in log mining},
+  author={He, Pinjia and Zhu, Jieming and He, Shilin and Li, Jian and Lyu, Michael R},
+  booktitle={2016 46th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)},
+  pages={654--661},
+  year={2016},
+  organization={IEEE}
+}
+
+% TSA for auto provisioning
+@inproceedings{hong2011dynamic,
+  title={Dynamic server provisioning to minimize cost in an IaaS cloud},
+  author={Hong, Yu-Ju and Xue, Jiachen and Thottethodi, Mithuna},
+  booktitle={Proceedings of the ACM SIGMETRICS joint international conference on Measurement and modeling of computer systems},
+  pages={147--148},
+  year={2011},
+  organization={ACM}
+}
+@inproceedings{chen2008energy,
+  title={Energy-Aware Server Provisioning and Load Dispatching for Connection-Intensive Internet Services.},
+  author={Chen, Gong and He, Wenbo and Liu, Jie and Nath, Suman and Rigas, Leonidas and Xiao, Lin and Zhao, Feng},
+  booktitle={NSDI},
+  volume={8},
+  pages={337--350},
+  year={2008}
+}
+
+% Server costof running
+@article{barroso2007case,
+  title={The case for energy-proportional computing},
+  author={Barroso, Luiz Andr{\'e} and H{\"o}lzle, Urs},
+  journal={Computer},
+  number={12},
+  pages={33--37},
+  year={2007},
+  publisher={IEEE}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tsa
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@misc{gurland1954hypothesis,
+  title={Hypothesis Testing in Time Series Analysis.},
+  author={Gurland, John},
+  year={1954},
+  publisher={JSTOR}
+}
+
+@article{ahmad2016real,
+  title={Real-time anomaly detection for streaming analytics},
+  author={Ahmad, Subutai and Purdy, Scott},
+  journal={arXiv preprint arXiv:1607.02480},
+  year={2016}
+}
+@article{ge1970box,
+  title={Box., and G. M, Jenkins.,“Time series analysis, forecasting and control”},
+  author={Ge, P},
+  journal={ed: San Francisco, CA: Holden Day},
+  year={1970}
+}
+@article{akouemo2017data,
+  title={Data Improving in Time Series Using ARX and ANN Models},
+  author={Akouemo, Hermine N and Povinelli, Richard J},
+  journal={IEEE Transactions on Power Systems},
+  volume={32},
+  number={5},
+  pages={3352--3359},
+  year={2017},
+  publisher={IEEE}
+}
+@inproceedings{kumar2016forecasting,
+  title={Forecasting HPC workload using ARMA models and SSA},
+  author={Kumar, Anoop S and Mazumdar, Somnath},
+  booktitle={Information Technology (ICIT), 2016 International Conference on},
+  pages={294--297},
+  year={2016},
+  organization={IEEE}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%log colelction schema
+@inproceedings{rabkin2010chukwa,
+  title={Chukwa: A system for reliable large-scale log collection},
+  author={Rabkin, Ariel and Katz, Randy},
+  booktitle={Proceedings of LISA’10: 24th Large Installation System Administration Conference},
+  pages={163},
+  year={2010}
 }
 
 
-@Misc{infodp,
-  key    = "web:infodp",
-  author = "",
-  title  = "K336 {I}nfo --- pokyny pro psaní diplomových prací",
-  note   = "\\ \verb|https://info336.felk.cvut.cz/clanek.php?id=400|, stav ze 4.\,5.\,2009",
-}
-
-@Misc{infobp,
-  key    = "web:infobp",
-  author = "",
-  title  = "K336 {I}nfo --- pokyny pro psaní bakalářských prací",
-  note   = "\\ \verb|https://info336.felk.cvut.cz/clanek.php?id=504|, stav ze 4.\,5.\,2009",
-}
-
-%
-@Misc{ipe,
-  key    = "web:ipe",
-  author = "",
-  title  = "Grafický vektorový editor pro práce vhodný pro práci {\LaTeX}em",
-  note   = "\\ \verb|http://tclab.kaist.ac.kr/ipe/|, stav z 4.\,5.\,2009",
-}
-
-@Misc{info,
-  key    = "web:info",
-  author = "",
-  title  = "K336 {I}nfo",
-  note   = "\\ \verb|  http://info336.felk.cvut.cz|, stav ze 4.\,5.\,2009",
-}
-
-@Misc{latexutf,
-  key = "web:latexutf",
-  author = "",
-  title =  "Wiki Books {\LaTeX}/{I}nternationalization",
-  note =   "\\ \verb|http://en.wikibooks.org/wiki/LaTeX/Internationalization|, stav z 1.\,5.\,2009",
-}
-
-
-@Misc{latexwiki,
-  key    = "web:latexwiki",
-  author = "",
-  title  = "Wiki Books {\LaTeX}",
-  note   = "\\ \verb|http://en.wikibooks.org/wiki/LaTeX/|, stav z 3.\,4.\,2009",
-}
-
-
-@Misc{dp_jcu,
-  key = "web:dpjcu",
-  author =       "",
-  title =        "Pokyny pro psaní {DP} na {JČU}",
-  note =         "\\ \verb|http://home.pf.jcu.cz/~edpo/pravidla/pravidla.html|, stav z 8.\,12.\,2008",
-}
-
-@Misc{dp_mendel,
-  key = "web:dpmendel",
-  author =       "",
-  title =        "Pokyny pro psaní {DP} na {M}endelově univerzitě v {B}rně",
-  note =         "\\ \verb|http://old.mendelu.cz/~rybicka/zpract/#diplomky|, stav z 1.\,2.\,2008",
-}
-
-@COMMENT( The references below have first names abridged. Do not follow this,
-use full names whenever possible, BibTeX style will do the appropriate unifications. )
-
-@Book{kniha,
-  author =       "J. Žára and B. Beneš and P. Felkel",
-  title =        "Moderní počítačová grafika",
-  publisher =    "Computer Press s.r.o, Brno",
-  edition =      "1st",
-  year   = 1998,
-  note =	"In Czech",
-}
-
-@Article{clanek,
-  author =       "P. Slavík",
-  title =        "Grammars and Rewriting Systems as Models for Graphical User Interfaces",
-  journal =      "Cognitive Systems",
-  pages =        "381--399",
-  volume =       4,
-  number =       "3/4",
-  year =         1997,
-}
-
-@COMMENT( It is always better to use TeX diacritical escape sequences, 
-e.g. {\'{L}}, in the bibliography database, making it encoding independent 
-and thus compilable under different document encoding settings. 
-Do not follow these examples! )
-
-@InProceedings{sbornik,
-  author = 	  "M. Haindl and {\'{L}}. Kment and  P. Slavík",
-  title = 	  "Virtual Information Systems",
-  booktitle =     "WSCG'2000 --- Short communication papers",
-  year =	  2000,
-  pages =	  "22--27",
-  publisher =     "University of West Bohemia, Pilsen",
-}
-
-@Misc{www,
-  key = "web:infogs",
-  author =       "",
-  title =        "Knihovna {G}rafické skupiny",
-  note =         "\\ \verb|http://www.cgg.cvut.cz/Bib/library/|, stav z 30.\,8.\,2001",
-}
+% Potential information source:
+%Graph-based Anomaly Detection and Description: A Survey
