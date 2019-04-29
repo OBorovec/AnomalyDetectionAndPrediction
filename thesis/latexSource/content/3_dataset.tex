@@ -1,7 +1,7 @@
 \chapter{Dataset}
 \label{chap:dataset}
 
-Datasets are important part of every research projects, you can either use it to evaluate your models or even train your models. Then the gold mind is every labelled dataset which provides the ground truth. The problem is that each dataset is really field specific so in our case we cannot use, for instance, a dataset of handwritten digits for our case. Another problem with the kind of data we need is that it can be really big. \cite{xu2009detecting} worked with Hadoop cluster logs generated in range of 48 hours by more than 200 nodes with total volume bigger than 200 TB, which were not, unfortunately, shared any further.
+Datasets are important part of every research project\ms{s}, you can either use it to evaluate your models or even train your models. Then the gold mind is every labelled dataset which provides the ground truth. The problem is that each dataset is really field specific so in our case we cannot use, for instance, a dataset of handwritten digits for our case. Another problem with the kind of data we need is that it can be really big. \cite{xu2009detecting} worked with Hadoop cluster logs generated in range of 48 hours by more than 200 nodes with total volume bigger than 200 TB, which were not, unfortunately, shared any further.
 
 \section{Existing datasets}
 
@@ -9,19 +9,19 @@ Specific focus of this thesis limits us in what available dataset can be useful.
 
 \begin{itemize}
 
-    \item \textbf{NAB\footnote{\url{https://github.com/numenta/NAB}}} - Numenta Anomaly Benchmark introduced in \cite{ahmad2017unsupervised} containes real-world and artificial time serias which can serve us for training time series monitoring based anomaly detection such we listed in part \ref{ssec:sota_logging_monitoring}. Especially data for AWS cloud watch which covers CPU utilization, network traffic and Drive I/O and time series from section Known causes with misconfiguration causing CPU problems and system failure resulting EC2 request latency.
+    \item \textbf{NAB\footnote{\url{https://github.com/numenta/NAB}}} - Numenta Anomaly Benchmark introduced in \cite{ahmad2017unsupervised} containes real-world and artificial time serias which can serve us for training time series monitoring based anomaly detection such we listed in \ms{Section}~\ref{ssec:sota_logging_monitoring}. Especially data for AWS cloud watch which covers CPU utilization, network traffic and Drive I/O and time series from section Known causes with misconfiguration causing CPU problems and system failure resulting EC2 request latency.
     
-    \item \textbf{ODDS\footnote{\url{http://odds.cs.stonybrook.edu}}} - Outlier Detection DataSets collects multiple different datasets for outlier/anomaly detection since 2016 from all the interest fields around. Even though we did not find any dataset which would 100\% fits to our research it can be useful for general testing of state clarification of anomalies. 
+    \item \textbf{ODDS\footnote{\url{http://odds.cs.stonybrook.edu}}} - Outlier Detection DataSets collects multiple different datasets for outlier/anomaly detection since 2016 from all the interest fields around. Even though we did not find any dataset which would 100\% fit\ms{s} to our research it can be useful for general testing of state clarification of anomalies\ms{ under some assumptions I guess}. 
     
     \item \textbf{Loghub\footnote{\url{https://github.com/logpai/loghub}}} can provide a large collection of system logs per stand alone applications. This collection is cited and used by most of the recent papers and works dealing with system log parsing and analysing.
 
-   \item \textbf{HDFS\footnote{\url{https://figshare.com/articles/HDFS_Logs/4040124}} \cite{xu2009detecting,xu2009online,Zhu2017}} contains log from more than 200 Hadoop nodes labelled by a Hadoop expert. There are about 2.9\% anomaly behaviour segments along more than 11 millions logged events total. This dataset was also used by many works we are refereeing in chapter \ref{chap:stateOfTheArt}.
+   \item \textbf{HDFS\footnote{\url{https://figshare.com/articles/HDFS_Logs/4040124}} \cite{xu2009detecting,xu2009online,Zhu2017}} contains log from more than 200 Hadoop nodes labelled by a Hadoop expert. There are about 2.9\% anomaly behaviour segments along more than 11 millions logged events total. This dataset was also used by many works we are refereeing in \ms{C}hapter~\ref{chap:stateOfTheArt}.
     
 \end{itemize}
 
 \section{Our new dataset}
 
-Unfortunately, none of the datasets listed above fully represents a complex software architecture by our definition of complex software architecture \ref{def:complexSoftwareArch}. We had a chance to create such dataset in cooperation with SAP Concur and discuss it in this section.
+Unfortunately, none of the datasets listed above fully represents a complex software architecture by our definition of complex software architecture \ms{(Definition~\ref{def:complexSoftwareArch})}. We had a chance to create such dataset in cooperation with SAP Concur and discuss it in this section.
 
 \subsection{Service architecture}
 

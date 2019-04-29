@@ -10,6 +10,10 @@
 \usepackage{afterpage}
 \usepackage[super]{nth}
 \usepackage{array}
+\usepackage[capitalise,noabbrev,nameinlink]{cleveref}
+
+\usepackage{nomencl}
+\makenomenclature
 
 \usepackage{amsthm}
 \newtheorem{definition}{Definition}[chapter]
@@ -19,7 +23,7 @@
 \newcommand\StudBranch{Data Science}
 
 \newcommand\WorkTitle{Problem detection and prediction in complex software architectures}
-\newcommand\FirstandFamilyName{Bc. Ondřej Borovec MSc.}
+\newcommand\FirstandFamilyName{Bc. Ondřej Borovec}
 \newcommand\Supervisor{Ing. Martin Svatoš}
 
 \usepackage[
@@ -35,6 +39,9 @@ unicode=true,
 ]
 {hyperref}
 
+
+\usepackage{color} 
+\newcommand{\ms}[1]{\textcolor{red}{#1}}
 
 \begin{document}
 
@@ -93,14 +100,17 @@ English abstract
 
 Czech abstract
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Notation
 
+\printnomenclature
+\nomenclature{$[..]$}{Tuple of values.}
+\nomenclature{${..}$}{Set of values.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%    Content tables
 
 \tableofcontents
 \listoffigures
 \listoftables
-
 
 %**************************************************************
 
@@ -112,7 +122,8 @@ Czech abstract
 \include{content/2_stateOfTheArt}
 \include{content/3_dataset}
 \include{content/4_suggestedSolution}
-\include{content/5_conclusion}
+\include{content/5_experiments}
+\include{content/6_conclusion}
 
 %**************************************************************
 

@@ -1,0 +1,10 @@
+oauth2client
+google-api-python-client
+elasticsearch
+pyyaml
+grepfunc
+sshtunnel
+javalang
+
+gitpython
+nltk

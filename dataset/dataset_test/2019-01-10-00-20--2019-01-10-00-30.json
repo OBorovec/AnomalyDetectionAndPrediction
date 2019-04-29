@@ -1,0 +1,128 @@
+{
+  "log": [
+    {
+      "@timestamp": "2019-01-10T0:20:00.0Z",
+      "cluster": "cluster_1",
+      "hostname": "hostname_1",
+      "application": "app_1",
+      "type": "log",
+      "level": "INFO",
+      "logger": "logger_1",
+      "message_pattern": "pk_1",
+      "message_variables": []
+    },
+    {
+      "@timestamp": "2019-01-10T0:21:00.0Z",
+      "cluster": "cluster_1",
+      "hostname": "hostname_1",
+      "application": "app_1",
+      "type": "log",
+      "level": "INFO",
+      "logger": "logger_2",
+      "message_pattern": "pk_2",
+      "message_variables": []
+    },
+    {
+      "@timestamp": "2019-01-10T0:22:00.0Z",
+      "cluster": "cluster_1",
+      "hostname": "hostname_1",
+      "application": "app_1",
+      "type": "log",
+      "level": "INFO",
+      "logger": "logger_3",
+      "message_pattern": "pk_3",
+      "message_variables": []
+    },
+    {
+      "@timestamp": "2019-01-10T0:23:00.0Z",
+      "cluster": "cluster_1",
+      "hostname": "hostname_1",
+      "application": "app_1",
+      "type": "log",
+      "level": "INFO",
+      "logger": "logger_1",
+      "message_pattern": "pk_1",
+      "message_variables": []
+    },
+    {
+      "@timestamp": "2019-01-10T0:24:00.0Z",
+      "cluster": "cluster_1",
+      "hostname": "hostname_1",
+      "application": "app_1",
+      "type": "log",
+      "level": "INFO",
+      "logger": "logger_2",
+      "message_pattern": "pk_2",
+      "message_variables": []
+    },
+    {
+      "@timestamp": "2019-01-10T0:25:00.0Z",
+      "cluster": "cluster_1",
+      "hostname": "hostname_1",
+      "application": "app_1",
+      "type": "log",
+      "level": "INFO",
+      "logger": "logger_3",
+      "message_pattern": "pk_3",
+      "message_variables": []
+    },
+    {
+      "@timestamp": "2019-01-10T0:25:30.0Z",
+      "cluster": "cluster_1",
+      "hostname": "hostname_2",
+      "application": "app_3",
+      "type": "log",
+      "level": "INFO",
+      "logger": "logger_1",
+      "message_pattern": "pk_2",
+      "message_variables": []
+    },
+    {
+      "@timestamp": "2019-01-10T0:26:00.0Z",
+      "cluster": "cluster_1",
+      "hostname": "hostname_1",
+      "application": "app_1",
+      "type": "log",
+      "level": "INFO",
+      "logger": "logger_1",
+      "message_pattern": "pk_1",
+      "message_variables": []
+    },
+    {
+      "@timestamp": "2019-01-10T0:27:00.0Z",
+      "cluster": "cluster_1",
+      "hostname": "hostname_1",
+      "application": "app_1",
+      "type": "log",
+      "level": "INFO",
+      "logger": "logger_2",
+      "message_pattern": "pk_2",
+      "message_variables": []
+    },
+    {
+      "@timestamp": "2019-01-10T0:28:00.0Z",
+      "cluster": "cluster_1",
+      "hostname": "hostname_1",
+      "application": "app_1",
+      "type": "log",
+      "level": "INFO",
+      "logger": "logger_3",
+      "message_pattern": "pk_3",
+      "message_variables": []
+    },
+    {
+      "@timestamp": "2019-01-10T0:29:00.0Z",
+      "cluster": "cluster_1",
+      "hostname": "hostname_1",
+      "application": "app_1",
+      "type": "log",
+      "level": "INFO",
+      "logger": "logger_4",
+      "message_pattern": "pk_4",
+      "message_variables": []
+    }
+  ],
+  "monitoring-logstash": [],
+  "monitoring-es-cluster": [],
+  "monitoring-kibana": []
+}
